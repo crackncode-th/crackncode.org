@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: "IBM Plex Sans Thai", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+}
+
+.rwidth {
+  @apply w-full lg:w-4/5 xl:w-3/4 2xl:w-2/3;
+}
+
+.page {
+  @apply rwidth mx-auto;
+}
+
+.page-title {
+  @apply text-5xl font-bold sm:text-6xl;
+}
