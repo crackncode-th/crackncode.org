@@ -1,6 +1,6 @@
 {
   "name": "crackncode.org",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "private": "true",
   "type": "module",
   "scripts": {
@@ -11,7 +11,7 @@
     "test": "playwright test",
     "check": "svelte-check --tsconfig ./tsconfig.json",
     "check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
-    "lint": "eslint src",
+    "lint": "eslint src --max-warnings=0",
     "format": "eslint src --fix"
   },
   "devDependencies": {
