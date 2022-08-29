@@ -1,6 +1,6 @@
 // @ts-check
 
-import adapter from "@sveltejs/adapter-netlify";
+import adapter from "@sveltejs/adapter-cloudflare";
 import path from "node:path";
 import preprocess from "svelte-preprocess";
 

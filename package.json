@@ -15,8 +15,8 @@
     "format": "eslint src --fix"
   },
   "devDependencies": {
-    "@sveltejs/adapter-netlify": "1.0.0-next.72",
-    "@sveltejs/kit": "1.0.0-next.444",
+    "@sveltejs/adapter-cloudflare": "1.0.0-next.32",
+    "@sveltejs/kit": "1.0.0-next.445",
     "@typescript-eslint/eslint-plugin": "^5.35.1",
     "@typescript-eslint/parser": "^5.35.1",
     "autoprefixer": "^10.4.8",
