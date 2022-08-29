@@ -4,7 +4,6 @@
   "private": "true",
   "type": "module",
   "scripts": {
-    "prebuild": "test \"$CI\" = true && npx pnpm install -r --store=node_modules/.pnpm-store || echo skipping pnpm install",
     "dev": "vite dev --port 7956",
     "build": "vite build",
     "package": "svelte-kit package",
