@@ -33,3 +33,29 @@ export function doubleSlide_txt(
     css: (t: number) => `opacity: ${t <= 0.5 ? 0 : 100}%;`,
   };
 }
+
+export function drawLogo(
+  node: SVGPathElement,
+  { delay = 0, duration = 1500, easing = cubicOut } = {}
+) {
+  const len = node.getTotalLength();
+  return {
+    delay,
+    duration,
+    easing,
+    css: (t: number, u: number) => `stroke-dasharray: ${t * len} ${u * len};`,
+  };
+}
+
+export function drawLogoRect(
+  node: SVGPathElement,
+  { delay = 0, duration = 1500, easing = cubicOut } = {}
+) {
+  const len = node.getTotalLength();
+  return {
+    delay,
+    duration,
+    easing,
+    css: (t: number, u: number) => `stroke-dasharray: ${t * len} ${u * len};`,
+  };
+}

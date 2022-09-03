@@ -23,16 +23,17 @@
 </script>
 
 <nav
-  class="rwidth mx-auto flex select-none flex-row items-center justify-between p-4"
+  class="app-width mx-auto mt-8 flex select-none flex-row items-center justify-between p-4"
 >
   <div class="left">
-    <a href="/">
+    <a href="/" class="flex flex-row items-center lg:gap-3">
       <img
-        class="cursor-pointer scale-[.66] lg:scale-100"
-        width="96"
+        class="scale-[.66] cursor-pointer lg:scale-100"
+        width="48"
         src="crackncode.webp"
         alt="crack n code logo"
       />
+      <p class="font-bold lg:text-lg">CRACK 'N' CODE</p>
     </a>
   </div>
 
@@ -43,13 +44,13 @@
   >
     {#each Object.entries(routes) as [url, name]}
       <a
-        class="text-xl {(
+        class="text-lg {(
           url == '/'
             ? $page.url.pathname == '/'
             : $page.url.pathname == '/' + url
         )
           ? 'cursor-default bg-slate-800'
-          : 'hover:bg-slate-700'} rounded p-2 transition-all"
+          : 'hover:bg-slate-700'} rounded px-2 py-1 transition-all"
         href={url}
       >
         {name}
