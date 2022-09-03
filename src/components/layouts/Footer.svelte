@@ -7,7 +7,7 @@
 </script>
 
 <footer
-  class="mt-5 my-3 mx-auto flex w-2/3 flex-col items-center justify-center"
+  class="my-3 mx-auto mt-5 flex w-2/3 flex-col items-center justify-center"
 >
   <hr class="mb-5 w-full" />
   <h2 class="text-lg font-bold">Crack 'n' Code Thailand</h2>

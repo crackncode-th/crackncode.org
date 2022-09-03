@@ -8,12 +8,12 @@
     sans-serif;
 }
 
-.rwidth {
+.app-width {
   @apply w-full lg:w-4/5 xl:w-3/4 2xl:w-2/3;
 }
 
 .page {
-  @apply rwidth mx-auto;
+  @apply app-width mx-auto;
 }
 
 .page-title {

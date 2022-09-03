@@ -23,18 +23,18 @@
 </script>
 
 <nav
-  class="rwidth mx-auto flex select-none flex-row items-center justify-between p-4"
+  class="app-width mx-auto mt-8 flex select-none flex-row items-center justify-between p-4"
 >
   <div class="left">
-    <a href="/" class="flex flex-row items-center gap-3">
+    <a href="/" class="flex flex-row items-center lg:gap-3">
       <img
-        class="cursor-pointer"
-        width="32"
+        class="scale-[.66] cursor-pointer lg:scale-100"
+        width="48"
         src="crackncode.webp"
         alt="crack n code logo"
       />
-      <b class="uppercase">crack 'n' code</b>
-    </a> 
+      <p class="font-bold lg:text-lg">CRACK 'N' CODE</p>
+    </a>
   </div>
 
   <!-- Desktop Nav -->
@@ -49,8 +49,8 @@
             ? $page.url.pathname == '/'
             : $page.url.pathname == '/' + url
         )
-          ? 'bg-slate-800 cursor-default'
-          : 'hover:bg-slate-700'} px-2 py-1 rounded transition-all"
+          ? 'cursor-default bg-slate-800'
+          : 'hover:bg-slate-700'} rounded px-2 py-1 transition-all"
         href={url}
       >
         {name}
