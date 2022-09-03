@@ -26,7 +26,10 @@
   class="app-width mx-auto mt-8 flex select-none flex-row items-center justify-between p-4"
 >
   <div class="left">
-    <a href="/" class="flex flex-row items-center lg:gap-3">
+    <a
+      href="/"
+      class="flex flex-row items-center transition-colors hover:text-neutral-300 lg:gap-3"
+    >
       <img
         class="scale-[.66] cursor-pointer lg:scale-100"
         width="48"

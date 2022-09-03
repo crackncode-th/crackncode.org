@@ -1,5 +1,6 @@
 <script lang="ts">
   import type { ICompetition } from "$data/competitions";
+  import styles from "$styles/styles.module.scss";
 
   export let data: ICompetition;
   $: ({ round, special, duration, link } = data);
@@ -12,9 +13,7 @@
   }
 </script>
 
-<div
-  class="flex items-center rounded-xl border border-gray-500 p-4 transition-colors hover:border-gray-600"
->
+<div class={styles.card}>
   <div class="flex flex-1 flex-col">
     <p class="text-lg font-bold">
       {round} Round{special ? ` (${special})` : ""}

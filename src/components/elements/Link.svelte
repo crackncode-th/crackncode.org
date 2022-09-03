@@ -1,13 +1,18 @@
 <script lang="ts">
+  import styles from "$styles/styles.module.scss";
+
   export let href: string;
   export let clsx = "";
+  export let blue = false;
 </script>
 
 <a
   {href}
   target="_blank"
   rel="noreferrer"
-  class="text-white transition-all hover:text-gray-400 {clsx}"
+  class="{blue
+    ? styles.blueLink
+    : 'text-white hover:text-gray-400'} transition-all {clsx}"
 >
   <slot />
 </a>

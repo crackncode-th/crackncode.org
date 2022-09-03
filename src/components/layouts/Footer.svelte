@@ -29,8 +29,6 @@
 
   <p class="mt-2">
     Domain and Website sponsored by
-    <Link href="https://leomotors.net" clsx="text-blue-500 hover:text-blue-600">
-      Leomotors
-    </Link>
+    <Link href="https://leomotors.net" blue>Leomotors</Link>
   </p>
 </footer>
