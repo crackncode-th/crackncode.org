@@ -28,7 +28,8 @@
 
       {#if year.includes("Upcoming")}
         <p class="mb-6 text-left text-lg">
-          Note: Competition date/time may be changed
+          Note: Competition date/time may be changed, please follow our social
+          media to stay updated
         </p>
       {/if}
 

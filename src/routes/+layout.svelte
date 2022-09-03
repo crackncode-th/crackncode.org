@@ -7,7 +7,7 @@
 
 <NavBar />
 
-<div class="min-h-[calc(100vh-18rem)] p-4">
+<div class="min-h-[calc(100vh-19rem)] p-4">
   <slot />
 </div>
 

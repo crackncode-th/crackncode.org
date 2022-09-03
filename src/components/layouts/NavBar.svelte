@@ -7,6 +7,7 @@
     "/": "Home",
     about: "About",
     competitions: "All Competitions",
+    sponsors: "Sponsors",
   };
 
   let popup = false;
@@ -27,7 +28,7 @@
   <div class="left">
     <a href="/">
       <img
-        class="cursor-pointer"
+        class="cursor-pointer scale-[.66] lg:scale-100"
         width="96"
         src="crackncode.webp"
         alt="crack n code logo"
@@ -59,15 +60,16 @@
   <!-- Mobile Nav -->
   <div
     class="inline rounded bg-slate-800 p-2 hover:bg-slate-600 sm:hidden"
-    on:click={() => setTimeout(() => (popup = !popup), 10)}
+    on:click={() => setTimeout(() => (popup = !popup), 0)}
   >
-    <List />
+    <List width="28" height="28" />
   </div>
 
   <div
-    class="absolute top-4 flex flex-col rounded bg-slate-800 p-2 {popup
+    class="absolute top-4 z-20 flex flex-col rounded bg-slate-800 p-2 {popup
       ? 'right-2 opacity-100'
-      : '-right-28 opacity-0'} transition-all"
+      : '-right-44 opacity-0'} transition-all"
+    data-sveltekit-prefetch
   >
     {#each Object.entries(routes) as [url, name]}
       <a

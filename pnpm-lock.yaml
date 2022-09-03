@@ -2,14 +2,14 @@ lockfileVersion: 5.4
 
 specifiers:
   '@sveltejs/adapter-netlify': 1.0.0-next.76
-  '@sveltejs/kit': 1.0.0-next.464
+  '@sveltejs/kit': 1.0.0-next.465
   '@typescript-eslint/eslint-plugin': ^5.36.1
   '@typescript-eslint/parser': ^5.36.1
   autoprefixer: ^10.4.8
   eslint: ^8.23.0
   eslint-config-prettier: ^8.5.0
   eslint-plugin-prettier: ^4.2.1
-  eslint-plugin-simple-import-sort: ^7.0.0
+  eslint-plugin-simple-import-sort: ^8.0.0
   eslint-plugin-svelte3: ^4.0.0
   postcss: ^8.4.16
   postcss-load-config: ^4.0.1
@@ -28,14 +28,14 @@ specifiers:
 
 devDependencies:
   '@sveltejs/adapter-netlify': 1.0.0-next.76
-  '@sveltejs/kit': 1.0.0-next.464_qevq5tvhizyxp44gfhkn6m3ljq
+  '@sveltejs/kit': 1.0.0-next.465_qevq5tvhizyxp44gfhkn6m3ljq
   '@typescript-eslint/eslint-plugin': 5.36.1_lbwfnm54o3pmr3ypeqp3btnera
   '@typescript-eslint/parser': 5.36.1_yqf6kl63nyoq5megxukfnom5rm
   autoprefixer: 10.4.8_postcss@8.4.16
   eslint: 8.23.0
   eslint-config-prettier: 8.5.0_eslint@8.23.0
   eslint-plugin-prettier: 4.2.1_tgumt6uwl2md3n6uqnggd6wvce
-  eslint-plugin-simple-import-sort: 7.0.0_eslint@8.23.0
+  eslint-plugin-simple-import-sort: 8.0.0_eslint@8.23.0
   eslint-plugin-svelte3: 4.0.0_sc4laremvjv7grvyfrqmp3xv5q
   postcss: 8.4.16
   postcss-load-config: 4.0.1_postcss@8.4.16
@@ -175,8 +175,8 @@ packages:
       tiny-glob: 0.2.9
     dev: true
 
-  /@sveltejs/kit/1.0.0-next.464_qevq5tvhizyxp44gfhkn6m3ljq:
-    resolution: {integrity: sha512-QV0IE8ShRC5ndP0fQN4/3bg8PMkjnhvLo0C4gULJ14LFPw5fgDbwuVM4uXmM+nfzT8hTkf9F27J3uZSoJmHaeg==}
+  /@sveltejs/kit/1.0.0-next.465_qevq5tvhizyxp44gfhkn6m3ljq:
+    resolution: {integrity: sha512-eOQEV13d0uQVUiZoB4tLX0Hp/7EddjDynfXSOI6QN0CENNCA6FySH+jq5b3tIjWP9GRNa729adldXev49Yf9kA==}
     engines: {node: '>=16.14'}
     hasBin: true
     requiresBuild: true
@@ -1105,8 +1105,8 @@ packages:
       prettier-linter-helpers: 1.0.0
     dev: true
 
-  /eslint-plugin-simple-import-sort/7.0.0_eslint@8.23.0:
-    resolution: {integrity: sha512-U3vEDB5zhYPNfxT5TYR7u01dboFZp+HNpnGhkDB2g/2E4wZ/g1Q9Ton8UwCLfRV9yAKyYqDh62oHOamvkFxsvw==}
+  /eslint-plugin-simple-import-sort/8.0.0_eslint@8.23.0:
+    resolution: {integrity: sha512-bXgJQ+lqhtQBCuWY/FUWdB27j4+lqcvXv5rUARkzbeWLwea+S5eBZEQrhnO+WgX3ZoJHVj0cn943iyXwByHHQw==}
     peerDependencies:
       eslint: '>=5.0.0'
     dependencies:

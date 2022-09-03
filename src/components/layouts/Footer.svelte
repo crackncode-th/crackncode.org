@@ -6,22 +6,31 @@
   import Link from "$components/elements/Link.svelte";
 </script>
 
-<footer class="my-5 mx-auto flex w-2/3 flex-col items-center justify-center">
+<footer
+  class="mt-5 my-3 mx-auto flex w-2/3 flex-col items-center justify-center"
+>
   <hr class="mb-5 w-full" />
   <h2 class="text-lg font-bold">Crack 'n' Code Thailand</h2>
   <p class="my-0 mb-2 text-base">
     "เดือนนี้คุณทำโจทย์ Crack 'n' Code แล้วหรือยัง"
   </p>
 
-  <div class="icons flex flex-row justify-center gap-4">
+  <div class="flex flex-row justify-center gap-4">
     <Link href="https://www.facebook.com/profile.php?id=100069611934421">
-      <Facebook />
+      <Facebook width="24" height="24" />
     </Link>
     <Link href="https://www.instagram.com/crackncodeth">
-      <Instagram />
+      <Instagram width="24" height="24" />
     </Link>
     <Link href="https://github.com/crackncode-th">
-      <Github />
+      <Github width="24" height="24" />
     </Link>
   </div>
+
+  <p class="mt-2">
+    Domain and Website sponsored by
+    <Link href="https://leomotors.net" clsx="text-blue-500 hover:text-blue-600">
+      Leomotors
+    </Link>
+  </p>
 </footer>
