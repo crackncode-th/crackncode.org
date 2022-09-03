@@ -1,7 +1,4 @@
 import { cubicOut } from "svelte/easing";
-import { writable } from "svelte/store";
-
-export const showElement = writable(false);
 
 export function doubleSlide(
   node: HTMLElement,

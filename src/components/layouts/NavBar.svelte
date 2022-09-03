@@ -6,6 +6,7 @@
   const routes = {
     "/": "Home",
     about: "About",
+    competitions: "All Competitions",
   };
 
   let popup = false;
@@ -21,7 +22,7 @@
 </script>
 
 <nav
-  class="flex flex-row justify-between items-center p-4 rwidth mx-auto select-none"
+  class="rwidth mx-auto flex select-none flex-row items-center justify-between p-4"
 >
   <div class="left">
     <a href="/">
@@ -36,7 +37,8 @@
 
   <!-- Desktop Nav -->
   <div
-    class="links px-4 flex-row hidden sm:flex justify-end items-center gap-2"
+    class="links hidden flex-row items-center justify-end gap-2 px-4 sm:flex"
+    data-sveltekit-prefetch
   >
     {#each Object.entries(routes) as [url, name]}
       <a
@@ -45,8 +47,8 @@
             ? $page.url.pathname == '/'
             : $page.url.pathname == '/' + url
         )
-          ? 'bg-slate-800 cursor-default'
-          : 'hover:bg-slate-700'} p-2 rounded transition-all"
+          ? 'cursor-default bg-slate-800'
+          : 'hover:bg-slate-700'} rounded p-2 transition-all"
         href={url}
       >
         {name}
@@ -56,14 +58,14 @@
 
   <!-- Mobile Nav -->
   <div
-    class="inline sm:hidden bg-slate-800 hover:bg-slate-600 p-2 rounded"
+    class="inline rounded bg-slate-800 p-2 hover:bg-slate-600 sm:hidden"
     on:click={() => setTimeout(() => (popup = !popup), 10)}
   >
     <List />
   </div>
 
   <div
-    class="bg-slate-800 rounded absolute top-4 p-2 flex flex-col {popup
+    class="absolute top-4 flex flex-col rounded bg-slate-800 p-2 {popup
       ? 'right-2 opacity-100'
       : '-right-28 opacity-0'} transition-all"
   >
@@ -75,7 +77,7 @@
             : $page.url.pathname == '/' + url
         )
           ? 'text-pink-500'
-          : 'text-white'} p-2 rounded transition-all"
+          : 'text-white'} rounded p-2 transition-all"
         href={url}
       >
         {name}

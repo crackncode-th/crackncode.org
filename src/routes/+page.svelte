@@ -8,10 +8,10 @@
   </CncText>
 
   <CncText delay={650} clsx="mb-2">
-    <h2>Next Contest</h2>
+    <h2 class="text-3xl font-bold">Next Contest</h2>
   </CncText>
 
   <CncText delay={650}>
-    <p>September 3, 2022 @ 19:00-22:00 (UTC+7)</p>
+    <p class="text-xl">September 10, 2022 @ 19:00-22:00 (UTC+7)</p>
   </CncText>
 </main>
