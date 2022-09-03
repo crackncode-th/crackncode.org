@@ -1,6 +1,6 @@
 <script lang="ts">
-  import CncLogo from "$components/elements/CncLogo.svelte";
-  import CncText from "$components/elements/CncText.svelte";
+  import CncLogo from "$components/animated/CncLogo.svelte";
+  import CncText from "$components/animated/CncText.svelte";
 </script>
 
 <svelte:head>

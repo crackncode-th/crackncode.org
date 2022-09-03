@@ -3,7 +3,7 @@
   import { cubicOut } from "svelte/easing";
   import { draw, fade } from "svelte/transition";
 
-  import { bottom, top } from "$components/elements/LogoShape";
+  import { bottom, top } from "$components/animated/LogoShape";
 
   let showElement = false;
   onMount(() => {

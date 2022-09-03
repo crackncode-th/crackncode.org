@@ -10,15 +10,12 @@ export function doubleSlide(
     delay,
     duration,
     easing,
-    css: (t: number) => {
-      return (
-        "overflow: hidden;" +
-        `transform: translateX(${Math.max(0, t - 0.5) * 2 * width_value}px);` +
-        `width: ${(0.5 - Math.abs(t - 0.5)) * 2 * width_value}px;` +
-        "background-color: #F13830;" +
-        "z-index: 2;"
-      );
-    },
+    css: (t: number) =>
+      "overflow: hidden;" +
+      `transform: translateX(${Math.max(0, t - 0.5) * 2 * width_value}px);` +
+      `width: ${(0.5 - Math.abs(t - 0.5)) * 2 * width_value}px;` +
+      "background-color: #F13830;" +
+      "z-index: 2;",
   };
 }
 
