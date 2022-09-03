@@ -33,7 +33,7 @@
         src="crackncode.webp"
         alt="crack n code logo"
       />
-      <b>CRACK 'N' CODE</b>
+      <b class="uppercase">crack 'n' code</b>
     </a> 
   </div>
 
