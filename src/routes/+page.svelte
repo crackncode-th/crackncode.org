@@ -2,6 +2,14 @@
   import CncText from "$components/elements/CncText.svelte";
 </script>
 
+<svelte:head>
+  <title>Crack 'n' Code Thailand</title>
+  <meta
+    name="description"
+    content="Crack 'n' Code is online programming contest organizer"
+  />
+</svelte:head>
+
 <main class="page">
   <CncText delay={100} clsx="mb-10">
     <h1 class="page-title">Crack 'n' Code Thailand</h1>

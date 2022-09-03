@@ -3,8 +3,16 @@
   import { competitions } from "$data/competitions";
 </script>
 
+<svelte:head>
+  <title>All Competitions | Crack 'n' Code Thailand</title>
+  <meta
+    name="description"
+    content="A page that lists all competitions, past and upcoming held by Crack 'n' Code Thailand"
+  />
+</svelte:head>
+
 <main class="page">
-  <h1 class="page-title">Past Competitions</h1>
+  <h1 class="page-title">All Competitions</h1>
 
   <p class="mt-8 text-left">
     * All time are displayed in Thailand Local Time (UTC+7)
