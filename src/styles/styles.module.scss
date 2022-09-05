@@ -1,5 +1,13 @@
+.baseCard {
+  @apply flex items-center rounded-xl border p-4 transition-colors;
+}
+
 .card {
-  @apply flex items-center rounded-xl border border-gray-500 p-4 transition-colors hover:border-gray-600;
+  @apply baseCard border-gray-500 hover:border-gray-600;
+}
+
+.goldenCard {
+  @apply baseCard border-yellow-300 hover:border-yellow-400;
 }
 
 .blueLink {

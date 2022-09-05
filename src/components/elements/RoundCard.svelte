@@ -13,7 +13,7 @@
   }
 </script>
 
-<div class={styles.card}>
+<div class={special ? styles.goldenCard : styles.card}>
   <div class="flex flex-1 flex-col">
     <p class="text-lg font-bold">
       {round} Round{special ? ` (${special})` : ""}

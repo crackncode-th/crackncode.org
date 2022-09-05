@@ -6,9 +6,7 @@
   import Link from "$components/elements/Link.svelte";
 </script>
 
-<footer
-  class="my-3 mx-auto mt-5 flex w-2/3 flex-col items-center justify-center"
->
+<footer class="my-5 mx-auto flex w-2/3 flex-col items-center justify-center">
   <hr class="mb-5 w-full" />
   <h2 class="text-lg font-bold">Crack 'n' Code Thailand</h2>
   <p class="my-0 mb-2 text-base">
@@ -26,9 +24,4 @@
       <Github width="24" height="24" />
     </Link>
   </div>
-
-  <p class="mt-2">
-    Domain and Website sponsored by
-    <Link href="https://leomotors.net" blue>Leomotors</Link>
-  </p>
 </footer>

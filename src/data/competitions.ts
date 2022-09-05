@@ -73,6 +73,7 @@ export const competitions: Record<string, ICompetition[]> = {
     },
     {
       round: "July",
+      special: "Anniversary Round",
       duration: "2 July 2022 19:00 - 22:00",
       link: "cms",
     },
