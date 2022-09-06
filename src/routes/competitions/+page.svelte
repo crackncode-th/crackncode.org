@@ -1,4 +1,5 @@
 <script lang="ts">
+  import Link from "$components/elements/Link.svelte";
   import RoundCard from "$components/elements/RoundCard.svelte";
   import { competitions } from "$data/competitions";
 </script>
@@ -17,7 +18,11 @@
   <p class="mt-8 text-left">
     * All time are displayed in Thailand Local Time (UTC+7)
   </p>
-  <p class="text-left">* CMS Competitions are not available for practice yet</p>
+  <p class="text-left">
+    * CMS Competitions are not available for practice yet but its statements can
+    be found on our
+    <Link href="https://github.com/crackncode-th" blue>GitHub</Link>
+  </p>
 
   {#each Object.entries(competitions) as [year, comps]}
     <section class="my-8">
