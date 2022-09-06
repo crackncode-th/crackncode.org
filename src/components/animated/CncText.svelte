@@ -6,6 +6,7 @@
   export let clsx = "";
 
   export let delay: number;
+  export let color: string;
   export let duration = 1500;
 
   let showElement = false;
@@ -16,7 +17,7 @@
 
 {#if showElement}
   <div class="center-itself container items-center {clsx}">
-    <div class="box" transition:doubleSlide|local={{ delay, duration }} />
+    <div class="box" transition:doubleSlide|local={{ delay, duration, color: color }} />
     <p
       class="center-itself"
       transition:doubleSlide_txt|local={{

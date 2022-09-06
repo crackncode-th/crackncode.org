@@ -6,10 +6,19 @@
   />
 </svelte:head>
 
-<main class="page lg:px-20">
-  <h1 class="page-title mb-10">About us</h1>
+<script lang="ts">
+  import CncText from "$components/animated/CncText.svelte";
+  import FloatIn from "$/components/animated/FloatIn.svelte";
+</script>
 
-  <p>Coming soon...</p>
+<main class="page lg:px-20">
+  <CncText delay={200} clsx="mb-10" color="#F13830">
+    <h1 class="page-title mb-10">About us</h1>
+  </CncText>
+
+  <FloatIn delay={500}>
+    <p>Coming soon...</p> 
+  </FloatIn>
 </main>
 
 <style lang="scss">
