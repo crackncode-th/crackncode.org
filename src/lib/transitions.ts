@@ -2,7 +2,7 @@ import { cubicOut } from "svelte/easing";
 
 export function doubleSlide(
   node: HTMLElement,
-  { delay = 0, duration = 400, easing = cubicOut, color = 0xf00d} = {}
+  { delay = 0, duration = 400, easing = cubicOut, color = "#F13830" } = {}
 ) {
   const style = getComputedStyle(node);
   const width_value = parseFloat(style["width"]);
@@ -40,7 +40,6 @@ export function floatObj(
     duration,
     easing,
     css: (t: number, u: number) =>
-      `transform: translateY(-${u * 30}px);` +
-      `opacity: ${t * 100}%;`
-  }
+      `transform: translateY(-${u * 30}px);` + `opacity: ${t * 100}%;`,
+  };
 }

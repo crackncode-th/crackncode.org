@@ -21,8 +21,8 @@
     <h1 class="page-title">Crack 'n' Code Thailand</h1>
   </CncText>
 
-  <CncText delay={100} clsx="my-6" color="#000">
-    <div class="w-11 h-2 bg-red-600"> </div>
+  <CncText delay={100} clsx="my-6" color="#101010">
+    <div class="h-2 w-11 bg-red-600" />
   </CncText>
 
   <CncText delay={750} clsx="mb-2" color="#F13830">
@@ -38,9 +38,7 @@
       <Link
         href="https://crackncode.contest.codeforces.com/group/rn8uJP8lA7/contests"
       >
-        <button
-          class="text-white bg-red-600 hover:bg-red-500"
-        >
+        <button class="bg-red-600 text-white hover:bg-red-500">
           Register
         </button>
       </Link>

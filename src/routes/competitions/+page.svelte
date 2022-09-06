@@ -1,9 +1,9 @@
 <script lang="ts">
+  import CncText from "$/components/animated/CncText.svelte";
+  import FloatIn from "$/components/animated/FloatIn.svelte";
   import Link from "$components/elements/Link.svelte";
   import RoundCard from "$components/elements/RoundCard.svelte";
   import { competitions } from "$data/competitions";
-  import CncText from "$/components/animated/CncText.svelte";
-  import FloatIn from "$/components/animated/FloatIn.svelte";
 </script>
 
 <svelte:head>
@@ -18,14 +18,14 @@
   <CncText delay={200} clsx="mb-10" color="#F13830">
     <h1 class="page-title">All Competitions</h1>
   </CncText>
-  
+
   <FloatIn delay={500}>
     <p class="mt-8 text-left">
       * All time are displayed in Thailand Local Time (UTC+7)
     </p>
     <p class="text-left">
-      * CMS Competitions are not available for practice yet but its statements can
-      be found on our
+      * CMS Competitions are not available for practice yet but its statements
+      can be found on our
       <Link href="https://github.com/crackncode-th" blue>GitHub</Link>
     </p>
   </FloatIn>

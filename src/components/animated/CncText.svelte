@@ -17,7 +17,10 @@
 
 {#if showElement}
   <div class="center-itself container items-center {clsx}">
-    <div class="box" transition:doubleSlide|local={{ delay, duration, color: color }} />
+    <div
+      class="box"
+      transition:doubleSlide|local={{ delay, duration, color }}
+    />
     <p
       class="center-itself"
       transition:doubleSlide_txt|local={{

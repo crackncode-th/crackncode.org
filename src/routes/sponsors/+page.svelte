@@ -1,10 +1,10 @@
 <script lang="ts">
+  import CncText from "$/components/animated/CncText.svelte";
+  import FloatIn from "$/components/animated/FloatIn.svelte";
   import Link from "$components/elements/Link.svelte";
   import SponsorCard from "$components/elements/SponsorCard.svelte";
   import { sponsors } from "$data/sponsors";
   import styles from "$styles/styles.module.scss";
-  import CncText from "$/components/animated/CncText.svelte";
-  import FloatIn from "$/components/animated/FloatIn.svelte";
 </script>
 
 <svelte:head>
@@ -16,7 +16,7 @@
   <CncText delay={200} clsx="mb-10" color="#F13830">
     <h1 class="page-title">Sponsors</h1>
   </CncText>
-  
+
   <FloatIn delay={500}>
     <div class="my-8 mx-auto flex w-full flex-col gap-4 lg:w-2/3 2xl:w-1/2">
       {#each sponsors as sponsor}
