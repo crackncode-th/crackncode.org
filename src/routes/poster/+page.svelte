@@ -10,7 +10,7 @@
 <main
   class="mx-auto flex aspect-square w-[512px] flex-col items-center justify-center gap-4 border border-yellow-400 p-4"
 >
-  <img src="crackncode.webp" class="my-8" width="180" alt="Cnc Logo" />
+  <img src="crackncode.webp" class="mb-8" width="180" alt="Cnc Logo" />
 
   <h1 class="text-4xl font-bold">Crack 'n' Code Thailand</h1>
   <h2 class="text-3xl font-bold">Next Contest</h2>

@@ -1,5 +1,5 @@
 <script lang="ts">
-  import "../app.scss";
+  import "$/app.scss";
 
   import Footer from "$components/layouts/Footer.svelte";
   import NavBar from "$components/layouts/NavBar.svelte";
