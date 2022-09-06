@@ -3,6 +3,7 @@
   import CncText from "$components/animated/CncText.svelte";
   import FadeIn from "$components/animated/FadeIn.svelte";
   import Link from "$components/elements/Link.svelte";
+  import { nextContestDate, nextContestTime } from "$data/nextContest";
 </script>
 
 <svelte:head>
@@ -25,7 +26,7 @@
   </CncText>
 
   <CncText delay={750}>
-    <p class="text-xl">September 10, 2022 @ 19:00-22:00 (UTC+7)</p>
+    <p class="text-xl">{nextContestDate} @ {nextContestTime} (UTC+7)</p>
   </CncText>
 
   <FadeIn delay={500}>
