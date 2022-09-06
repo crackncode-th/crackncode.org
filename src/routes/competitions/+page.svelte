@@ -1,4 +1,6 @@
 <script lang="ts">
+  import CncText from "$/components/animated/CncText.svelte";
+  import FloatIn from "$/components/animated/FloatIn.svelte";
   import Link from "$components/elements/Link.svelte";
   import RoundCard from "$components/elements/RoundCard.svelte";
   import { competitions } from "$data/competitions";
@@ -13,44 +15,50 @@
 </svelte:head>
 
 <main class="page">
-  <h1 class="page-title">All Competitions</h1>
+  <CncText delay={200} clsx="mb-10" color="#F13830">
+    <h1 class="page-title">All Competitions</h1>
+  </CncText>
 
-  <p class="mt-8 text-left">
-    * All time are displayed in Thailand Local Time (UTC+7)
-  </p>
-  <p class="text-left">
-    * CMS Competitions are not available for practice yet but its statements can
-    be found on our
-    <Link href="https://github.com/crackncode-th" blue>GitHub</Link>
-  </p>
+  <FloatIn delay={500}>
+    <p class="mt-8 text-left">
+      * All time are displayed in Thailand Local Time (UTC+7)
+    </p>
+    <p class="text-left">
+      * CMS Competitions are not available for practice yet but its statements
+      can be found on our
+      <Link href="https://github.com/crackncode-th" blue>GitHub</Link>
+    </p>
+  </FloatIn>
 
-  {#each Object.entries(competitions) as [year, comps]}
-    <section class="my-8">
-      <div class="my-8 flex items-center gap-4">
-        <h2 class="text-3xl font-bold">{year}</h2>
-        <hr class="flex-1" />
-      </div>
+  <FloatIn delay={1069}>
+    {#each Object.entries(competitions) as [year, comps]}
+      <section class="my-8">
+        <div class="my-8 flex items-center gap-4">
+          <h2 class="text-3xl font-bold">{year}</h2>
+          <hr class="flex-1" />
+        </div>
 
-      {#if year.includes("Upcoming")}
-        <p class="mb-6 text-left text-lg">
-          Note: Competition date/time may be changed, please follow our social
-          media to stay updated
-        </p>
-      {/if}
+        {#if year.includes("Upcoming")}
+          <p class="mb-6 text-left text-lg">
+            Note: Competition date/time may be changed, please follow our social
+            media to stay updated
+          </p>
+        {/if}
 
-      <div class="grid grid-cols-1 gap-4 lg:grid-cols-2">
-        {#each comps as comp}
-          {#if comp.link.startsWith("https://")}
-            <a href={comp.link} target="_blank" rel="noreferrer">
-              <RoundCard data={comp} />
-            </a>
-          {:else}
-            <div class="cursor-default">
-              <RoundCard data={comp} />
-            </div>
-          {/if}
-        {/each}
-      </div>
-    </section>
-  {/each}
+        <div class="grid grid-cols-1 gap-4 lg:grid-cols-2">
+          {#each comps as comp}
+            {#if comp.link.startsWith("https://")}
+              <a href={comp.link} target="_blank" rel="noreferrer">
+                <RoundCard data={comp} />
+              </a>
+            {:else}
+              <div class="cursor-default">
+                <RoundCard data={comp} />
+              </div>
+            {/if}
+          {/each}
+        </div>
+      </section>
+    {/each}
+  </FloatIn>
 </main>

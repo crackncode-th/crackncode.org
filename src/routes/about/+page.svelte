@@ -1,3 +1,8 @@
+<script lang="ts">
+  import FloatIn from "$/components/animated/FloatIn.svelte";
+  import CncText from "$components/animated/CncText.svelte";
+</script>
+
 <svelte:head>
   <title>About us | Crack 'n' Code Thailand</title>
   <meta
@@ -7,9 +12,13 @@
 </svelte:head>
 
 <main class="page lg:px-20">
-  <h1 class="page-title mb-10">About us</h1>
+  <CncText delay={200} clsx="mb-10" color="#F13830">
+    <h1 class="page-title mb-10">About us</h1>
+  </CncText>
 
-  <p>Coming soon...</p>
+  <FloatIn delay={500}>
+    <p>Coming soon...</p>
+  </FloatIn>
 </main>
 
 <style lang="scss">
