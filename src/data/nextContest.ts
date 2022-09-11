@@ -1,2 +1,5 @@
-export const nextContestDate = "September 10, 2022";
-export const nextContestTime = "19:00-22:00";
+import { competitions } from "./competitions";
+
+export const nextContest = competitions["Upcoming (2022)"][0];
+
+export const nextContestTime = nextContest.duration;

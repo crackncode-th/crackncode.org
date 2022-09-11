@@ -3,7 +3,7 @@
   import CncText from "$components/animated/CncText.svelte";
   import FloatIn from "$components/animated/FloatIn.svelte";
   import Link from "$components/elements/Link.svelte";
-  import { nextContestDate, nextContestTime } from "$data/nextContest";
+  import { nextContestTime } from "$data/nextContest";
 </script>
 
 <svelte:head>
@@ -30,7 +30,7 @@
   </CncText>
 
   <CncText delay={750} color="#F13830">
-    <p class="text-xl">{nextContestDate} @ {nextContestTime} (UTC+7)</p>
+    <p class="text-xl">{nextContestTime} (UTC+7)</p>
   </CncText>
 
   <FloatIn delay={1000}>

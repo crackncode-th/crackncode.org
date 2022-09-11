@@ -5,6 +5,9 @@ export interface ICompetition {
   link: string;
 }
 
+const codeforcesLink =
+  "https://crackncode.contest.codeforces.com/group/rn8uJP8lA7/contest/392796";
+
 export const competitions: Record<string, ICompetition[]> = {
   "2021": [
     {
@@ -80,29 +83,29 @@ export const competitions: Record<string, ICompetition[]> = {
     {
       round: "August",
       duration: "6 August 2022 19:00 - 22:00",
-      link: "https://crackncode.contest.codeforces.com/group/rn8uJP8lA7/contest/392796",
+      link: codeforcesLink,
+    },
+    {
+      round: "September",
+      duration: "10 September 2022 19:00 - 22:00",
+      link: codeforcesLink,
     },
   ],
   "Upcoming (2022)": [
     {
-      round: "September",
-      duration: "10 September 2022 19:00 - 22:00",
-      link: "codeforces",
-    },
-    {
       round: "October",
       duration: "1 October 2022 19:00 - 22:00",
-      link: "codeforces",
+      link: codeforcesLink,
     },
     {
       round: "November",
       duration: "5 November 2022 19:00 - 22:00",
-      link: "codeforces",
+      link: codeforcesLink,
     },
     {
       round: "December",
       duration: "3 December 2022 19:00 - 22:00",
-      link: "codeforces",
+      link: codeforcesLink,
     },
   ],
 };
