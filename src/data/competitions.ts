@@ -72,7 +72,7 @@ export const competitions: Record<string, ICompetition[]> = {
       round: "June",
       special: "Pre TOI18",
       duration: "28 & 29 May 2022 19:00 - 22:00",
-      link: "cms",
+      link: "https://cnc-pretoi18.netlify.app/",
     },
     {
       round: "July",

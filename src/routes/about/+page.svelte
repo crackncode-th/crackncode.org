@@ -11,18 +11,50 @@
   />
 </svelte:head>
 
-<main class="page lg:px-20">
-  <CncText delay={200} clsx="mb-10" color="#F13830">
-    <h1 class="page-title mb-10">About us</h1>
+<main class="page lg:px-20 flex flex-col gap-8">
+  <CncText delay={0} color="#F13830">
+    <h1 class="page-title">About Crack 'n' Code</h1>
   </CncText>
 
-  <FloatIn delay={500}>
-    <p>to implement</p>
+  <FloatIn delay={200}>
+    <h2>About Us</h2>
+    <p>
+      We, Crack 'n' Code Thailand are group of Computer Olympic Students in
+      Thailand (IPST, สสวท Camp) that want to open chance for students who are
+      interested in Computer Olympic to practice, have fun and improve their
+      performance.
+    </p>
+  </FloatIn>
+
+  <FloatIn delay={400}>
+    <h2>About Competition</h2>
+    <p>
+      Most of our competitions are similar to IOI-Format. There will be 3
+      questions with equal score of 100 per each. You will be given 3 hours and
+      any language is allowed. Note that we do not use time scaling policy.
+      <b>Currently, all statements are only available in Thai.</b>
+    </p>
+  </FloatIn>
+
+  <FloatIn delay={600}>
+    <h2>When are our Contest?</h2>
+    <p>
+      Our contest will be held at first Saturday of every month. However, it is
+      subject to change in some month if we cannot prepare the questions in
+      time. In some month, it will be replaced by special event such as New Year
+      Party, Pre-TOI. Please follow our social media (Facebook, Instagram) for
+      updates. We usually announce within week prior to competition for normal
+      round.
+    </p>
   </FloatIn>
 </main>
 
 <style lang="scss">
   p {
-    @apply my-4 text-xl lg:text-2xl;
+    @apply my-4 text-xl;
+  }
+
+  h2 {
+    @apply text-2xl font-bold sm:text-3xl;
   }
 </style>

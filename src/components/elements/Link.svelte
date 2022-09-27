@@ -9,7 +9,7 @@
 <a
   {href}
   target="_blank"
-  rel="noreferrer"
+  rel="noopener"
   class="{blue
     ? styles.blueLink
     : 'text-white hover:text-gray-400'} transition-all {clsx}"

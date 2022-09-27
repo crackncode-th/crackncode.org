@@ -48,7 +48,7 @@
         <div class="grid grid-cols-1 gap-4 lg:grid-cols-2">
           {#each comps as comp}
             {#if comp.link.startsWith("https://")}
-              <a href={comp.link} target="_blank" rel="noreferrer">
+              <a href={comp.link} target="_blank" rel="noopener">
                 <RoundCard data={comp} />
               </a>
             {:else}
