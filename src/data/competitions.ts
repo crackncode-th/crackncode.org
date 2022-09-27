@@ -6,7 +6,7 @@ export interface ICompetition {
 }
 
 const codeforcesLink =
-  "https://crackncode.contest.codeforces.com/group/rn8uJP8lA7/contest/392796";
+  "https://crackncode.contest.codeforces.com/group/rn8uJP8lA7/contests";
 
 export const competitions: Record<string, ICompetition[]> = {
   "2021": [
@@ -72,7 +72,7 @@ export const competitions: Record<string, ICompetition[]> = {
       round: "June",
       special: "Pre TOI18",
       duration: "28 & 29 May 2022 19:00 - 22:00",
-      link: "cms",
+      link: "https://cnc-pretoi18.netlify.app/",
     },
     {
       round: "July",

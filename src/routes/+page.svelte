@@ -17,23 +17,23 @@
 <main class="page">
   <CncLogo />
 
-  <CncText delay={200} clsx="mb-10" color="#F13830">
+  <CncText delay={0} clsx="mb-10" color="#F13830">
     <h1 class="page-title">Crack 'n' Code Thailand</h1>
   </CncText>
 
-  <CncText delay={100} clsx="my-6" color="#101010">
+  <CncText delay={0} clsx="my-6" color="#101010">
     <div class="h-2 w-11 bg-red-600" />
   </CncText>
 
-  <CncText delay={750} clsx="mb-2" color="#F13830">
+  <CncText delay={400} clsx="mb-2" color="#F13830">
     <h2 class="text-3xl font-bold">Next Contest</h2>
   </CncText>
 
-  <CncText delay={750} color="#F13830">
+  <CncText delay={400} color="#F13830">
     <p class="text-xl">{nextContestTime} (UTC+7)</p>
   </CncText>
 
-  <FloatIn delay={1000}>
+  <FloatIn delay={600}>
     <div class="mt-11 mb-6 flex justify-center gap-5">
       <Link
         href="https://crackncode.contest.codeforces.com/group/rn8uJP8lA7/contests"
