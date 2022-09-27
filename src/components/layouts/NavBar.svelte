@@ -36,7 +36,15 @@
         src="crackncode.webp"
         alt="crack n code logo"
       />
-      <p class="font-bold lg:text-lg">CRACK 'N' CODE</p>
+      <div class="flex gap-2 items-center">
+        <p class="font-bold lg:text-lg">CRACK 'N' CODE</p>
+        <img
+          src="Flag_of_Thailand.svg"
+          width="36"
+          height="24"
+          alt="Flag of Thailand"
+        />
+      </div>
     </a>
   </div>
 

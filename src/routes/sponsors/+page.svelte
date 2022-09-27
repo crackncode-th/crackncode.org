@@ -13,11 +13,11 @@
 </svelte:head>
 
 <main class="page">
-  <CncText delay={200} clsx="mb-10" color="#F13830">
+  <CncText delay={0} clsx="mb-10" color="#F13830">
     <h1 class="page-title">Sponsors</h1>
   </CncText>
 
-  <FloatIn delay={500}>
+  <FloatIn delay={200}>
     <div class="my-8 mx-auto flex w-full flex-col gap-4 lg:w-2/3 2xl:w-1/2">
       {#each sponsors as sponsor}
         <SponsorCard {...sponsor} />
@@ -25,7 +25,7 @@
     </div>
   </FloatIn>
 
-  <FloatIn delay={1000}>
+  <FloatIn delay={400}>
     <h2 class="text-3xl font-bold">Sponsoring</h2>
     <p class="text-lg">
       Please contact

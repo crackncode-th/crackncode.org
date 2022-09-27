@@ -6,7 +6,7 @@ export interface ICompetition {
 }
 
 const codeforcesLink =
-  "https://crackncode.contest.codeforces.com/group/rn8uJP8lA7/contest/392796";
+  "https://crackncode.contest.codeforces.com/group/rn8uJP8lA7/contests";
 
 export const competitions: Record<string, ICompetition[]> = {
   "2021": [

@@ -15,11 +15,11 @@
 </svelte:head>
 
 <main class="page">
-  <CncText delay={200} clsx="mb-10" color="#F13830">
+  <CncText delay={0} clsx="mb-10" color="#F13830">
     <h1 class="page-title">All Competitions</h1>
   </CncText>
 
-  <FloatIn delay={500}>
+  <FloatIn delay={200}>
     <p class="mt-8 text-left">
       * All time are displayed in Thailand Local Time (UTC+7)
     </p>
@@ -30,7 +30,7 @@
     </p>
   </FloatIn>
 
-  <FloatIn delay={1069}>
+  <FloatIn delay={400}>
     {#each Object.entries(competitions) as [year, comps]}
       <section class="my-8">
         <div class="my-8 flex items-center gap-4">
