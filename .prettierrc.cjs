@@ -8,7 +8,7 @@ const config = {
   singleQuote: false,
   semi: true,
   trailingComma: "es5",
-  plugins: [require("prettier-plugin-tailwindcss")],
+  plugins: ["prettier-plugin-tailwindcss"],
 };
 
 module.exports = config;
