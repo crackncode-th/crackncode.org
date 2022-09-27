@@ -1,6 +1,6 @@
 <script lang="ts">
-  import FloatIn from "$/components/animated/FloatIn.svelte";
   import CncText from "$components/animated/CncText.svelte";
+  import FloatIn from "$components/animated/FloatIn.svelte";
 </script>
 
 <svelte:head>
@@ -17,7 +17,7 @@
   </CncText>
 
   <FloatIn delay={500}>
-    <p>Coming soon...</p>
+    <p>to implement</p>
   </FloatIn>
 </main>
 

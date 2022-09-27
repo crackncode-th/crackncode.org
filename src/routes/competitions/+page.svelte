@@ -1,6 +1,6 @@
 <script lang="ts">
-  import CncText from "$/components/animated/CncText.svelte";
-  import FloatIn from "$/components/animated/FloatIn.svelte";
+  import CncText from "$components/animated/CncText.svelte";
+  import FloatIn from "$components/animated/FloatIn.svelte";
   import Link from "$components/elements/Link.svelte";
   import RoundCard from "$components/elements/RoundCard.svelte";
   import { competitions } from "$data/competitions";

@@ -18,7 +18,7 @@ export default {
   kit: {
     adapter: adapter(),
     alias: {
-      $: path.resolve("src"),
+      "$/app.scss": path.resolve("src/app.scss"),
       $components: path.resolve("src/components"),
       $data: path.resolve("src/data"),
       $styles: path.resolve("src/styles"),
