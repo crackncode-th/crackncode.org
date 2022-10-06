@@ -19,9 +19,9 @@
   <FloatIn delay={200}>
     <h2>About Us</h2>
     <p>
-      We, Crack 'n' Code Thailand are group of Computer Olympic Students in
-      Thailand (IPST, สสวท Camp) that want to open chance for students who are
-      interested in Computer Olympic to practice, have fun and improve their
+      We, Crack 'n' Code Thailand, are a group of Computer Olympic Students in
+      Thailand (IPST, สสวท Camp) that wants to open a chance for students who
+      are interested in Computer Olympic to practice, have fun and improve their
       performance.
     </p>
   </FloatIn>
@@ -37,14 +37,14 @@
   </FloatIn>
 
   <FloatIn delay={600}>
-    <h2>When are our Contest?</h2>
+    <h2>When is our Contest?</h2>
     <p>
-      Our contest will be held at first Saturday of every month. However, it is
-      subject to change in some month if we cannot prepare the questions in
-      time. In some month, it will be replaced by special event such as New Year
-      Party, Pre-TOI. Please follow our social media (Facebook, Instagram) for
-      updates. We usually announce within week prior to competition for normal
-      round.
+      Our contest will be held on the first Saturday of every month. However, it
+      is subject to change in some months if we cannot prepare the questions in
+      time. In some month, it will be replaced by a special event such as New
+      Year Party, Pre-TOI. Please follow our social media (Facebook, Instagram)
+      for updates. We usually announce within a week prior to competition for
+      normal round.
     </p>
   </FloatIn>
 </main>
