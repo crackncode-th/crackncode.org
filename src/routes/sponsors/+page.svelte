@@ -37,7 +37,7 @@
     <p class="text-lg">
       You can also sponsor
       <Link href="https://github.com/sponsors/Leomotors" blue>Leomotors</Link>
-      who is main website developer of Crack 'n' Code who supports this domain.
+      who is the main website developer of Crack 'n' Code who supports this domain.
     </p>
   </FloatIn>
 </main>
