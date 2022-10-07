@@ -4,7 +4,7 @@
   import { page } from "$app/stores";
 
   const routes = {
-    "/": "Home",
+    "": "Home",
     about: "About",
     competitions: "All Competitions",
     sponsors: "Sponsors",
@@ -33,13 +33,13 @@
       <img
         class="scale-[.66] cursor-pointer lg:scale-100"
         width="48"
-        src="crackncode.webp"
+        src="/crackncode.webp"
         alt="crack n code logo"
       />
-      <div class="flex gap-2 items-center">
+      <div class="flex items-center gap-2">
         <p class="font-bold lg:text-lg">CRACK 'N' CODE</p>
         <img
-          src="Flag_of_Thailand.svg"
+          src="/Flag_of_Thailand.svg"
           width="36"
           height="24"
           alt="Flag of Thailand"
@@ -51,18 +51,17 @@
   <!-- Desktop Nav -->
   <div
     class="links hidden flex-row items-center justify-end gap-2 px-4 sm:flex"
-    data-sveltekit-prefetch
   >
     {#each Object.entries(routes) as [url, name]}
       <a
         class="text-lg {(
-          url == '/'
-            ? $page.url.pathname == '/'
-            : $page.url.pathname == '/' + url
+          url === ''
+            ? $page.url.pathname === '/'
+            : $page.url.pathname === '/' + url
         )
           ? 'cursor-default bg-slate-800'
           : 'hover:bg-slate-700'} rounded px-2 py-1 transition-all"
-        href={url}
+        href="/{url}"
       >
         {name}
       </a>
@@ -81,18 +80,17 @@
     class="absolute top-4 z-20 flex flex-col rounded bg-slate-800 p-2 {popup
       ? 'right-2 opacity-100'
       : '-right-44 opacity-0'} transition-all"
-    data-sveltekit-prefetch
   >
     {#each Object.entries(routes) as [url, name]}
       <a
         class="text-xl {(
-          url == '/'
-            ? $page.url.pathname == '/'
-            : $page.url.pathname == '/' + url
+          url === ''
+            ? $page.url.pathname === '/'
+            : $page.url.pathname === '/' + url
         )
           ? 'text-pink-500'
           : 'text-white'} rounded p-2 transition-all"
-        href={url}
+        href="/{url}"
       >
         {name}
       </a>

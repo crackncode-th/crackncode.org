@@ -11,7 +11,7 @@
   />
 </svelte:head>
 
-<main class="page lg:px-20 flex flex-col gap-8">
+<main class="page flex flex-col gap-8 lg:px-20">
   <CncText delay={0} color="#F13830">
     <h1 class="page-title">About Crack 'n' Code</h1>
   </CncText>

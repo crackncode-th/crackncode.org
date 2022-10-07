@@ -47,10 +47,10 @@
 
         <div class="grid grid-cols-1 gap-4 lg:grid-cols-2">
           {#each comps as comp}
-            {#if comp.link.startsWith("https://")}
-              <a href={comp.link} target="_blank" rel="noopener">
+            {#if comp.link}
+              <Link href={comp.link}>
                 <RoundCard data={comp} />
-              </a>
+              </Link>
             {:else}
               <div class="cursor-default">
                 <RoundCard data={comp} />

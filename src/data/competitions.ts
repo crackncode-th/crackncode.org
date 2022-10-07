@@ -5,7 +5,7 @@ export interface ICompetition {
   link: string;
 }
 
-const codeforcesLink =
+export const codeforcesLink =
   "https://crackncode.contest.codeforces.com/group/rn8uJP8lA7/contests";
 
 export const competitions: Record<string, ICompetition[]> = {
@@ -78,7 +78,7 @@ export const competitions: Record<string, ICompetition[]> = {
       round: "July",
       special: "Anniversary Round",
       duration: "2 July 2022 19:00 - 22:00",
-      link: "cms",
+      link: "",
     },
     {
       round: "August",
@@ -90,12 +90,18 @@ export const competitions: Record<string, ICompetition[]> = {
       duration: "10 September 2022 19:00 - 22:00",
       link: codeforcesLink,
     },
-  ],
-  "Upcoming (2022)": [
     {
       round: "October",
       duration: "1 October 2022 19:00 - 22:00",
       link: codeforcesLink,
+    },
+  ],
+  "Upcoming (2022)": [
+    {
+      round: "October Extra",
+      special: "Pre POSN 1",
+      duration: "15 October 2022 19:00 - 22:00",
+      link: "/special/2210/pre-posn-1",
     },
     {
       round: "November",
