@@ -26,6 +26,7 @@ const config = {
     "prettier/prettier": "warn",
     "simple-import-sort/imports": "warn",
     "simple-import-sort/exports": "warn",
+    eqeqeq: "warn",
   },
   settings: {
     "svelte3/typescript": () => require("typescript"),

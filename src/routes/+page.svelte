@@ -2,8 +2,13 @@
   import CncLogo from "$components/animated/CncLogo.svelte";
   import CncText from "$components/animated/CncText.svelte";
   import FloatIn from "$components/animated/FloatIn.svelte";
-  import Link from "$components/elements/Link.svelte";
-  import { nextContestTime } from "$data/nextContest";
+  import RedButton from "$components/elements/RedButton.svelte";
+  import {
+    nextContestIsSpecial,
+    nextContestLink,
+    nextContestTime,
+  } from "$data/nextContest";
+  import styles from "$styles/styles.module.scss";
 </script>
 
 <svelte:head>
@@ -26,7 +31,13 @@
   </CncText>
 
   <CncText delay={400} clsx="mb-2" color="#F13830">
-    <h2 class="text-3xl font-bold">Next Contest</h2>
+    <h2 class="text-3xl font-bold">
+      Next Contest
+      {#if nextContestIsSpecial}
+        <br class="sm:hidden" />
+        ✨Special Round✨
+      {/if}
+    </h2>
   </CncText>
 
   <CncText delay={400} color="#F13830">
@@ -34,26 +45,16 @@
   </CncText>
 
   <FloatIn delay={600}>
-    <div class="mt-11 mb-6 flex justify-center gap-5">
-      <Link
-        href="https://crackncode.contest.codeforces.com/group/rn8uJP8lA7/contests"
-      >
-        <button class="bg-red-600 text-white hover:bg-red-500">
-          Register
-        </button>
-      </Link>
+    <div class="mt-11 mb-6 flex flex-col justify-center gap-5 sm:flex-row">
+      <RedButton href={nextContestLink}>
+        {nextContestIsSpecial ? "View Details" : "Register"}
+      </RedButton>
 
       <a href="/competitions">
-        <button class="bg-gray-600 hover:bg-gray-500">
+        <button class="bg-gray-600 hover:bg-gray-500 {styles.colorButton}">
           View all competitions
         </button>
       </a>
     </div>
   </FloatIn>
 </main>
-
-<style lang="scss">
-  button {
-    @apply rounded-md py-3 px-5 text-xl transition-colors;
-  }
-</style>

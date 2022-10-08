@@ -5,6 +5,8 @@
 
   import { bottom, top } from "$components/animated/LogoShape";
 
+  export let size: "sm" | "lg" = "lg";
+
   let showElement = false;
   onMount(() => {
     showElement = true;
@@ -12,12 +14,12 @@
 </script>
 
 {#if showElement}
-  <div class="flex justify-center p-10">
+  <div class="flex justify-center {size === 'lg' ? 'p-10' : 'p-6'}">
     <svg
       version="1.1"
       xmlns="http://www.w3.org/2000/svg"
-      width="130"
-      height="130"
+      width={size === "lg" ? 130 : 120}
+      height={size === "lg" ? 130 : 120}
       viewBox="0 0 1000 1000"
     >
       <defs>
