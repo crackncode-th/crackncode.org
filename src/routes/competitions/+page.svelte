@@ -31,7 +31,7 @@
   </FloatIn>
 
   <FloatIn delay={400}>
-    {#each Object.entries(competitions) as [year, comps]}
+    {#each Object.entries(competitions).reverse() as [year, comps]}
       <section class="my-8">
         <div class="my-8 flex items-center gap-4">
           <h2 class="text-3xl font-bold">{year}</h2>
