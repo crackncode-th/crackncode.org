@@ -12,7 +12,7 @@
   />
 </svelte:head>
 
-<FloatIn delay={100} clsx="my-4">
+<FloatIn delay={100} clsx="my-6">
   <h2 class="text-3xl font-bold">Pre POSN 1</h2>
 
   <p class="text-2xl font-bold">
@@ -24,11 +24,25 @@
   <p class="text-2xl">15 October 2022 19:00 - 22:00 @ Codeforces</p>
 </FloatIn>
 
-<FloatIn delay={300} clsx="my-4">
-  <h2 class="text-3xl font-bold">รายละเอียดการแข่งขัน</h2>
+<FloatIn delay={300} clsx="my-8">
+  <h2 class="text-3xl font-bold my-2">รายละเอียดการแข่งขัน</h2>
 
-  <ul class="app-width mx-auto list-disc text-left sm:text-xl">
-    <li>มี 6 ข้อ ข้อละ 100 คะแนน รวม 600 คะแนน</li>
+  <ul class="app-width mx-auto list-disc text-left sm:text-xl pl-4">
+    <li>
+      มี 6 ข้อ ข้อละ 100 คะแนน รวม 600 คะแนน โดยแบ่งความยากของโจทย์เป็น 3 ระบบ
+    </li>
+    <ul class="list-disc ml-4">
+      <li>ระดับ A - มีความยากใกล้เคียงข้อสอบปลายค่ายของศูนย์สามเสน</li>
+      <li>
+        ระดับ B - มีความยากในระดับที่สูงขึ้น ปัญหาย่อยแรก ๆ
+        จะมีความยากใกล้เคียงศูนย์สามเสน แต่ถ้าจะเก็บเต็มต้องใช้ทักษะการวิเคราะห์
+        หลักการทางคณิตศาสตร์ที่สูงขึ้น
+      </li>
+      <li>
+        ระดับ C - ทำออกมาเพื่อท้าทายเด็กศูนย์ ม.บูรพา
+        ที่เขาลือกันว่าข้อสอบมหาโหด
+      </li>
+    </ul>
     <li>
       จุดประสงค์ของโจทย์ทุกข้อ คือการวัดพื้นฐานการเขียนโปรแกรมด้วยภาษา C
       ครอบคลุมเนื้อหาทั้งหมดในค่าย วัดความรู้ทางตรรกศาสตร์ คณิตศาสตร์
