@@ -25,13 +25,13 @@
 </FloatIn>
 
 <FloatIn delay={300} clsx="my-8">
-  <h2 class="text-3xl font-bold my-2">รายละเอียดการแข่งขัน</h2>
+  <h2 class="my-2 text-3xl font-bold">รายละเอียดการแข่งขัน</h2>
 
-  <ul class="app-width mx-auto list-disc text-left sm:text-xl pl-4">
+  <ul class="app-width mx-auto list-disc pl-4 text-left sm:text-xl">
     <li>
       มี 6 ข้อ ข้อละ 100 คะแนน รวม 600 คะแนน โดยแบ่งความยากของโจทย์เป็น 3 ระบบ
     </li>
-    <ul class="list-disc ml-4">
+    <ul class="ml-4 list-disc">
       <li>ระดับ A - มีความยากใกล้เคียงข้อสอบปลายค่ายของศูนย์สามเสน</li>
       <li>
         ระดับ B - มีความยากในระดับที่สูงขึ้น ปัญหาย่อยแรก ๆ
