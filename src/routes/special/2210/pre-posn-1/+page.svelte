@@ -21,7 +21,7 @@
 </FloatIn>
 
 <FloatIn delay={200} clsx="my-4">
-  <p class="text-2xl">15 October 2022 19:00 - 22:00 @ Codeforces</p>
+  <p class="text-2xl">16 October 2022 19:00 - 22:00 @ Codeforces</p>
 </FloatIn>
 
 <FloatIn delay={300} clsx="my-8">

@@ -100,7 +100,7 @@ export const competitions: Record<string, ICompetition[]> = {
     {
       round: "October Extra",
       special: "Pre POSN 1",
-      duration: "15 October 2022 19:00 - 22:00",
+      duration: "16 October 2022 19:00 - 22:00",
       link: "/special/2210/pre-posn-1",
     },
     {
