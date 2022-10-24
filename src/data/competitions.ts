@@ -95,14 +95,14 @@ export const competitions: Record<string, ICompetition[]> = {
       duration: "1 October 2022 19:00 - 22:00",
       link: codeforcesLink,
     },
-  ],
-  "Upcoming (2022)": [
     {
       round: "October Extra",
       special: "Pre POSN 1",
       duration: "16 October 2022 19:00 - 22:00",
       link: "/special/2210/pre-posn-1",
     },
+  ],
+  "Upcoming (2022)": [
     {
       round: "November",
       duration: "5 November 2022 19:00 - 22:00",
