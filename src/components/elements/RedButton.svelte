@@ -5,8 +5,6 @@
   export let href: string;
 </script>
 
-<Link {href}>
-  <button class="bg-red-600 text-white hover:bg-red-500 {styles.colorButton}">
-    <slot />
-  </button>
+<Link {href} clsx="bg-red-600 text-white hover:bg-red-500 {styles.colorButton}">
+  <slot />
 </Link>

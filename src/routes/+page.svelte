@@ -50,10 +50,11 @@
         {nextContestIsSpecial ? "View Details" : "Register"}
       </RedButton>
 
-      <a href="/competitions">
-        <button class="bg-gray-600 hover:bg-gray-500 {styles.colorButton}">
-          View all competitions
-        </button>
+      <a
+        href="/competitions"
+        class="bg-gray-600 hover:bg-gray-500 {styles.colorButton}"
+      >
+        View all competitions
       </a>
     </div>
   </FloatIn>
