@@ -128,7 +128,7 @@ export const competitions: Record<string, ICompetition[]> = {
       round: "January",
       special: "New Year",
       duration: "31 December 2022 18:00 - 1 January 2023 06:00",
-      link: codeforcesLink,
+      link: "/special/2301/new-year",
     },
     ...Array.from({ length: 11 }, (_, i) => ({
       round: monthNames[i + 1],
