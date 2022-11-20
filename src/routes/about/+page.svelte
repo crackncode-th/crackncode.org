@@ -40,11 +40,10 @@
     <h2>When is our Contest?</h2>
     <p>
       Our contest will be held on the first Saturday of every month. However, it
-      is subject to change in some months if we cannot prepare the questions in
-      time. In some month, it will be replaced by a special event such as New
-      Year Party, Pre-TOI. Please follow our social media (Facebook, Instagram)
-      for updates. We usually announce within a week prior to competition for
-      normal round.
+      is subject to change in some months if we encounter issues. In some month,
+      it will be replaced by a special event such as New Year Party, Pre-TOI.
+      Please follow our social media (Facebook, Instagram) for updates. We
+      usually announce within a week prior to competition for normal round.
     </p>
   </FloatIn>
 </main>

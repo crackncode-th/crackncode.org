@@ -3,7 +3,7 @@
   import FloatIn from "$components/animated/FloatIn.svelte";
   import Link from "$components/elements/Link.svelte";
   import RoundCard from "$components/elements/RoundCard.svelte";
-  import { competitions } from "$data/competitions";
+  import { competitions, sortKey } from "$data/competitions";
 </script>
 
 <svelte:head>
@@ -31,7 +31,7 @@
   </FloatIn>
 
   <FloatIn delay={400}>
-    {#each Object.entries(competitions).reverse() as [year, comps]}
+    {#each Object.entries(competitions).sort((a, b) => sortKey.indexOf(a[0]) - sortKey.indexOf(b[0])) as [year, comps]}
       <section class="my-8">
         <div class="my-8 flex items-center gap-4">
           <h2 class="text-3xl font-bold">{year}</h2>

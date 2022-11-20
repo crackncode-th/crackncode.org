@@ -69,12 +69,12 @@
   </div>
 
   <!-- Mobile Nav -->
-  <div
+  <button
     class="inline rounded bg-slate-800 p-2 hover:bg-slate-600 sm:hidden"
     on:click={() => setTimeout(() => (popup = !popup), 0)}
   >
     <List width="28" height="28" />
-  </div>
+  </button>
 
   <div
     class="absolute top-4 z-20 flex flex-col rounded bg-slate-800 p-2 {popup
