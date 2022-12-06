@@ -10,12 +10,9 @@ export interface ICompetition {
 export const codeforcesLink =
   "https://crackncode.contest.codeforces.com/group/rn8uJP8lA7/contests";
 
-export const sortKey = [
-  "Upcoming (2022)",
-  "Upcoming (2023)",
-  "2022",
-  "2021",
-] satisfies Array<keyof typeof competitions>;
+export const sortKey = ["Upcoming (2023)", "2022", "2021"] satisfies Array<
+  keyof typeof competitions
+>;
 
 export const competitions: Record<string, ICompetition[]> = {
   "2021": [
@@ -115,8 +112,6 @@ export const competitions: Record<string, ICompetition[]> = {
       duration: "5 November 2022 19:00 - 22:00",
       link: codeforcesLink,
     },
-  ],
-  "Upcoming (2022)": [
     {
       round: "December",
       duration: "3 December 2022 19:00 - 22:00",
