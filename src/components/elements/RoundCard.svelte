@@ -7,7 +7,8 @@
 
   function logoFromURL(url: string) {
     if (url.includes("hackerrank")) return "logos/hackerrank.webp";
-    if (url.includes("codeforces")) return "logos/codeforces.webp";
+    if (url.includes("codeforces") || url.startsWith("/special"))
+      return "logos/codeforces.webp";
 
     return "logos/cms.webp";
   }
