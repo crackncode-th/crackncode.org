@@ -17,6 +17,14 @@ export const sortKey = [
   "2021",
 ] satisfies Array<keyof typeof competitions>;
 
+function generateMonths(begin: number, end: number) {
+  return Array.from({ length: end - begin + 1 }, (_, i) => ({
+    round: monthNames[i + begin - 1],
+    duration: `${firstSaturdayOf(2023, i + begin)} 19:00 - 22:00`,
+    link: codeforcesLink,
+  }));
+}
+
 export const competitions: Record<string, ICompetition[]> = {
   "2021": [
     {
@@ -128,12 +136,7 @@ export const competitions: Record<string, ICompetition[]> = {
       duration: "31 December 2022 18:00 - 1 January 2023 06:00",
       link: "/special/2301/new-year",
     },
+    ...generateMonths(2, 2),
   ],
-  "Upcoming (2023)": [
-    ...Array.from({ length: 11 }, (_, i) => ({
-      round: monthNames[i + 1],
-      duration: `${firstSaturdayOf(2023, i + 2)} 19:00 - 22:00`,
-      link: codeforcesLink,
-    })),
-  ],
+  "Upcoming (2023)": [...generateMonths(3, 12)],
 };
