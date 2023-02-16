@@ -36,9 +36,9 @@
 </script>
 
 <main>
-  <h1 class="text-2xl font-bold sm:text-3xl">Ranking of round {round}</h1>
+  <h1 class="text-2xl font-bold sm:text-3xl">Ranking for {round}</h1>
 
-  <div class="mx-auto my-8 w-full overflow-x-scroll 2xl:w-[1250px]">
+  <div class="mx-auto my-8 w-full overflow-x-auto 2xl:w-[1250px]">
     <table class="mx-auto">
       <thead>
         {#each headers as column, index}
@@ -55,9 +55,9 @@
           </th>
         {/each}
       </thead>
-      <tbody class="text-black">
+      <tbody class="text-white">
         {#each content as columns}
-          <tr class="bg-slate-200">
+          <tr>
             {#each columns as column}
               <td>
                 {column}
@@ -73,7 +73,15 @@
 <style lang="scss">
   th,
   td {
-    @apply border border-gray-500 p-1 text-base lg:p-2 lg:text-lg;
+    @apply border-y border-gray-500 p-1 text-base lg:p-2 lg:text-lg;
+
+    &:first-child {
+      @apply border-l;
+    }
+
+    &:last-child {
+      @apply border-r;
+    }
   }
 
   th {
