@@ -7,7 +7,6 @@ describe("Ranking Utilities", () => {
     expect(
       createRankingProps({
         round: "Contest",
-        link: "https://example.com",
         tasks: ["A", "B", "C"],
         scores: [
           { name: "Alice", scores: [100, 100, 100] },
@@ -17,7 +16,6 @@ describe("Ranking Utilities", () => {
       })
     ).toStrictEqual({
       round: "Contest",
-      link: "https://example.com",
       headers: ["Rank", "Name", "A", "B", "C", "Total"],
       content: [
         [1, "Alice", 100, 100, 100, 300],
@@ -31,7 +29,6 @@ describe("Ranking Utilities", () => {
     expect(
       createRankingProps({
         round: "Contest",
-        link: "https://example.com",
         tasks: ["A", "B", "C"],
         scores: [
           { name: "Alice", scores: [100, 100, 100] },
@@ -41,7 +38,6 @@ describe("Ranking Utilities", () => {
       })
     ).toStrictEqual({
       round: "Contest",
-      link: "https://example.com",
       headers: ["Rank", "Name", "A", "B", "C", "Total"],
       content: [
         [1, "Alice", 100, 100, 100, 300],

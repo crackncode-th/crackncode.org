@@ -5,6 +5,8 @@ import path from "node:path";
 import adapter from "@sveltejs/adapter-static";
 import preprocess from "svelte-preprocess";
 
+import staticPaths from "./tools/staticPaths.js";
+
 /** @type {import("@sveltejs/kit").Config} */
 export default {
   // Consult https://github.com/sveltejs/svelte-preprocess
@@ -22,6 +24,9 @@ export default {
       $components: path.resolve("src/components"),
       $data: path.resolve("src/data"),
       $styles: path.resolve("src/styles"),
+    },
+    prerender: {
+      entries: ["*", ...staticPaths],
     },
   },
 };

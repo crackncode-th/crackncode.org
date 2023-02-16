@@ -1,12 +1,11 @@
 export type Ranking = {
   round: string;
-  link: string;
   tasks: string[];
   scores: Array<{ name: string; scores: number[] }>;
 };
 
 export function createRankingProps(ranking: Ranking) {
-  const { round, link, tasks, scores } = ranking;
+  const { round, tasks, scores } = ranking;
 
   const headers = ["Rank", "Name", ...tasks, "Total"];
 
@@ -40,7 +39,6 @@ export function createRankingProps(ranking: Ranking) {
 
   return {
     round,
-    link,
     headers,
     content: computed,
   };
