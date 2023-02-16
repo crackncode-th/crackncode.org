@@ -1,6 +1,8 @@
 <script lang="ts">
-  import type { PageData } from "./$types";
   import Chevron from "$components/icons/Chevron.svelte";
+
+  import type { PageData } from "./$types";
+
   export let data: PageData;
   $: ({ round, link, headers, content } = data);
 
@@ -20,7 +22,7 @@
     const key = headers.indexOf(_key);
 
     return () => {
-      if (key == current_key) {
+      if (key === current_key) {
         ascending = !ascending;
       } else {
         current_key = key;
@@ -36,18 +38,18 @@
 <main>
   <h1 class="text-2xl font-bold sm:text-3xl">Ranking of round {round}</h1>
 
-  <div class="w-full 2xl:w-[1250px] mx-auto my-8 overflow-x-scroll">
+  <div class="mx-auto my-8 w-full overflow-x-scroll 2xl:w-[1250px]">
     <table class="mx-auto">
       <thead>
         {#each headers as column, index}
           <th
-            class:selected-col={current_key == index}
-            on:click={column == "Rank" ? null : sortKey(column)}
+            class:selected-col={current_key === index}
+            on:click={column === "Rank" ? null : sortKey(column)}
           >
             <div>
               {column}
-              {#if column != "Rank"}
-                <Chevron ascending={ascending && current_key == index} />
+              {#if column !== "Rank"}
+                <Chevron ascending={ascending && current_key === index} />
               {/if}
             </div>
           </th>
