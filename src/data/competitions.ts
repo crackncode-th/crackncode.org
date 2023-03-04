@@ -138,5 +138,5 @@ export const competitions: Record<string, ICompetition[]> = {
     },
     ...generateMonths(2, 2),
   ],
-  "Upcoming (2023)": [...generateMonths(3, 12)],
+  "Upcoming (2023)": [...generateMonths(4, 12)],
 };
