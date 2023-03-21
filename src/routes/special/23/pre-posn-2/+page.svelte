@@ -22,7 +22,6 @@
 <FloatIn delay={200} clsx="my-4">
   <p class="text-2xl">Round 1 25 March 2022 19:00 - 22:00 @ Codeforces</p>
   <p class="text-2xl">Round 2 1 April 2022 19:00 - 22:00 @ Codeforces</p>
-  <!--<p class="text-2xl">19:00 - 22:00 @ Codeforces</p>-->
 </FloatIn>
 
 <FloatIn delay={300} clsx="my-8">
