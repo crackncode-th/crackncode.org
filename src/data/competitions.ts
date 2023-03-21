@@ -143,8 +143,14 @@ export const competitions: Record<string, ICompetition[]> = {
       round: "March",
       special: "Pre POSN 2",
       duration: "25 March 2023 19:00 - 22:00",
-      link: "/special/2303/pre-posn-2",
+      link: "/special/23/pre-posn-2",
     },
-    ...generateMonths(4, 12),
+    {
+      round: "April",
+      special: "Pre POSN 2",
+      duration: "1 April 2023 19:00 - 22:00",
+      link: "/special/23/pre-posn-2",
+    },
+    ...generateMonths(5, 12),
   ],
 };
