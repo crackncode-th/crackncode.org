@@ -162,7 +162,7 @@ export const competitions: Record<string, ICompetition[]> = {
       round: "July",
       special: "Anniversary Round",
       duration: "1 July 2023 19:00 - 22:00",
-      link: "",
+      link: codeforcesLink,
     },
     ...generateMonths(8, 12),
   ],
