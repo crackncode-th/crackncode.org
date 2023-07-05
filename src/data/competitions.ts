@@ -156,14 +156,12 @@ export const competitions: Record<string, ICompetition[]> = {
       link: "https://pretoi19.crackncode.org/",
     },
     ...generateMonths(6, 6),
-  ],
-  "Upcoming (2023)": [
     {
       round: "July",
       special: "Anniversary Round",
       duration: "1 July 2023 19:00 - 22:00",
       link: codeforcesLink,
     },
-    ...generateMonths(8, 12),
   ],
+  "Upcoming (2023)": [...generateMonths(8, 12)],
 };
