@@ -39,11 +39,8 @@
   <FloatIn delay={600}>
     <h2>When is our Contest?</h2>
     <p>
-      Our contest will be held on the first Saturday of every month. However, it
-      is subject to change in some months if we encounter issues. In some month,
-      it will be replaced by a special event such as New Year Party, Pre-TOI.
-      Please follow our social media (Facebook, Instagram) for updates. We
-      usually announce within a week prior to competition for normal round.
+      Please follow our social media (Facebook, Instagram) for updates about
+      upcoming contests.
     </p>
   </FloatIn>
 </main>
