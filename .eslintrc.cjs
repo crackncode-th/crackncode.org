@@ -8,12 +8,20 @@ const config = {
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:prettier/recommended",
+    "plugin:svelte/recommended",
   ],
-  plugins: ["svelte3", "@typescript-eslint", "simple-import-sort"],
+  plugins: ["@typescript-eslint", "simple-import-sort"],
   overrides: [
     {
       files: ["*.svelte"],
-      processor: "svelte3/svelte3",
+      parser: "svelte-eslint-parser",
+      parserOptions: {
+        parser: "@typescript-eslint/parser",
+      },
+      rules: {
+        // Error parsing SCSS + PostCSS
+        "svelte/valid-compile": "off",
+      },
     },
     {
       files: ["*.cjs"],

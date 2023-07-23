@@ -4,7 +4,7 @@
   import type { PageData } from "./$types";
 
   export let data: PageData;
-  $: ({ round, link, headers, content } = data);
+  $: ({ round, headers, content } = data);
 
   $: current_key = headers.length - 1;
   let ascending = false;
