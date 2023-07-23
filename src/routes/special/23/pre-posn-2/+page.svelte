@@ -1,7 +1,7 @@
 <script>
   import FloatIn from "$components/animated/FloatIn.svelte";
   import RedButton from "$components/elements/RedButton.svelte";
-  import { codeforcesLink } from "$data/competitions";
+  import { codeforcesLink } from "$data/constants";
 </script>
 
 <svelte:head>
