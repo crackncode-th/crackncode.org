@@ -4,9 +4,11 @@
   import FloatIn from "$components/animated/FloatIn.svelte";
   import RedButton from "$components/elements/RedButton.svelte";
   import {
+    isTBA,
     nextContestIsSpecial,
     nextContestLink,
     nextContestTime,
+    pastNextContest,
   } from "$data/nextContest";
   import styles from "$styles/styles.module.scss";
 </script>
@@ -32,7 +34,7 @@
 
   <CncText delay={400} clsx="mb-2" color="#F13830">
     <h2 class="text-3xl font-bold">
-      Next Contest
+      {pastNextContest ? "Previous" : "Next"} Contest
       {#if nextContestIsSpecial}
         <br class="sm:hidden" />
         ✨Special Round✨
@@ -46,7 +48,7 @@
 
   <FloatIn delay={600}>
     <div class="mt-11 mb-6 flex flex-col justify-center gap-5 sm:flex-row">
-      <RedButton href={nextContestLink}>
+      <RedButton href={nextContestLink} disabled={isTBA}>
         {nextContestIsSpecial ? "View Details" : "Register"}
       </RedButton>
 
