@@ -157,5 +157,13 @@ export const competitions: Record<string, ICompetition[]> = {
     ...generateMonths(6, 6),
     ...(!isTBA && pastNextContest ? [nextContest] : []),
   ],
-  "Upcoming (2023)": [...(!isTBA && !pastNextContest ? [nextContest] : [])],
+  // "Upcoming (2023)": [...(!isTBA && !pastNextContest ? [nextContest] : [])],
+  "Upcoming (2023)": [
+    {
+      round: "October",
+      special: "Pre POSN 1",
+      duration: "13 October 2023 19:00 - 22:00",
+      link: codeforcesLink,
+    },
+  ],
 };
