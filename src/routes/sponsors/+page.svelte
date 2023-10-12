@@ -28,16 +28,17 @@
   <FloatIn delay={400}>
     <h2 class="text-3xl font-bold">Sponsoring</h2>
     <p class="text-lg">
-      Please contact
+      We appreciate your support for our little non-profit organization. Please
+      contact
       <a href="mailto:contact@crackncode.org" class={styles.blueLink}>
         contact@crackncode.org
       </a>
-      for sponsoring
+      if you wish to support us.
     </p>
     <p class="text-lg">
       You can also sponsor
       <Link href="https://github.com/sponsors/Leomotors" blue>Leomotors</Link>
-      who is the main website developer of Crack 'n' Code who supports this domain.
+      who is the main website developer of Crack 'n' Code.
     </p>
   </FloatIn>
 </main>
