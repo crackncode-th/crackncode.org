@@ -66,7 +66,7 @@
         </div>
 
         {#if comps.length === 0}
-          <p class="self-start text-start font-bold text-2xl">TBA</p>
+          <p class="self-start text-start text-2xl font-bold">TBA</p>
         {/if}
       </section>
     {/each}

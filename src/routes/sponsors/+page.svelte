@@ -18,7 +18,7 @@
   </CncText>
 
   <FloatIn delay={200}>
-    <div class="my-8 mx-auto flex w-full flex-col gap-4 lg:w-2/3 2xl:w-1/2">
+    <div class="mx-auto my-8 flex w-full flex-col gap-4 lg:w-2/3 2xl:w-1/2">
       {#each sponsors as sponsor}
         <SponsorCard {...sponsor} />
       {/each}

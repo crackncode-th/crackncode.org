@@ -47,7 +47,7 @@
   </CncText>
 
   <FloatIn delay={600}>
-    <div class="mt-11 mb-6 flex flex-col justify-center gap-5 sm:flex-row">
+    <div class="mb-6 mt-11 flex flex-col justify-center gap-5 sm:flex-row">
       <RedButton href={nextContestLink} disabled={isTBA}>
         {nextContestIsSpecial ? "View Details" : "Register"}
       </RedButton>
