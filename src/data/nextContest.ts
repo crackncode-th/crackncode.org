@@ -1,11 +1,11 @@
 import type { ICompetition } from "./competitions";
-import { codeforcesLink, facebookLink } from "./constants";
+import { codeforcesLink } from "./constants";
 
 export const nextContest = {
   round: "October",
   special: "Pre POSN 1",
   duration: "13 October 2023 19:00 - 22:00",
-  link: facebookLink,
+  link: codeforcesLink,
 } satisfies ICompetition;
 
 export const isTBA = nextContest.link === "TBA";

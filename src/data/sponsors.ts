@@ -1,15 +1,17 @@
 export interface ISponsor {
-  github: string;
+  image: string;
+  url: string;
   name: string;
   sponsoring: string;
-  amount: number;
+  medal: string;
 }
 
-export const sponsors: ISponsor[] = [
+export const sponsors = [
   {
-    github: "Leomotors",
-    name: "Nutthapat Pongtanyavichai",
-    sponsoring: "This website Domain",
-    amount: 363,
+    image: "/logos/taurus.webp",
+    url: "https://learntaurus.com/",
+    name: "TAURUS",
+    sponsoring: "This website domain, contest costs and coffee for members",
+    medal: "🎉🎉🎉",
   },
-];
+] satisfies ISponsor[];
