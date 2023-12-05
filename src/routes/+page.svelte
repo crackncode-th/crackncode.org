@@ -19,6 +19,7 @@
     name="description"
     content="Crack 'n' Code is online programming contest organizer"
   />
+  <meta property="og:image" content="/og.png" />
 </svelte:head>
 
 <main class="page">
