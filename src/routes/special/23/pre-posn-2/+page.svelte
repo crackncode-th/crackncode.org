@@ -1,7 +1,7 @@
 <script>
   import FloatIn from "$components/animated/FloatIn.svelte";
   import RedButton from "$components/elements/RedButton.svelte";
-  import { codeforcesLink } from "$data/competitions";
+  import { codeforcesLink } from "$data/constants";
 </script>
 
 <svelte:head>
@@ -28,7 +28,9 @@
   <h2 class="my-2 text-3xl font-bold">รายละเอียดการแข่งขัน</h2>
 
   <ul class="app-width mx-auto list-disc pl-4 text-left sm:text-xl">
-    <li>มี 6 ข้อ แบ่งออกเป็น 2 วัน วันละ 3 ข้อ ข้อละ 100 คะแนน รวม 600 คะแนน</li>
+    <li>
+      มี 6 ข้อ แบ่งออกเป็น 2 วัน วันละ 3 ข้อ ข้อละ 100 คะแนน รวม 600 คะแนน
+    </li>
     <li>
       จุดประสงค์ของโจทย์ทุกข้อ คือวัดพื้นฐานการเขียนโปรแกรมด้วยภาษา C++
       โดยครอบคลุมเนื้อหาทั้งหมดของค่าย 2 สอวน.

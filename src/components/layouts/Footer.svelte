@@ -6,7 +6,7 @@
   import Link from "$components/elements/Link.svelte";
 </script>
 
-<footer class="my-5 mx-auto flex w-2/3 flex-col items-center justify-center">
+<footer class="mx-auto my-5 flex w-2/3 flex-col items-center justify-center">
   <hr class="mb-5 w-full" />
   <h2 class="text-lg font-bold">Crack 'n' Code Thailand</h2>
   <p class="my-0 mb-2 text-base">

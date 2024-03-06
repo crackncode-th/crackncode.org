@@ -28,6 +28,12 @@
       can be found on our
       <Link href="https://github.com/crackncode-th" blue>GitHub</Link>
     </p>
+    <p class="text-left">
+      * Some of CMS Competitions are now available in
+      <Link href="https://programming.in.th" blue>programming.inth</Link>
+      and
+      <Link href="https://otog.cf" blue>otog.cf</Link>
+    </p>
   </FloatIn>
 
   <FloatIn delay={400}>
@@ -58,6 +64,10 @@
             {/if}
           {/each}
         </div>
+
+        {#if comps.length === 0}
+          <p class="self-start text-start text-2xl font-bold">TBA</p>
+        {/if}
       </section>
     {/each}
   </FloatIn>

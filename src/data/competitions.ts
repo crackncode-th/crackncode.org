@@ -1,3 +1,5 @@
+import { codeforcesLink } from "./constants";
+import { isTBA, nextContest, pastNextContest } from "./nextContest";
 import { firstSaturdayOf, monthNames } from "./utils";
 
 export interface ICompetition {
@@ -6,9 +8,6 @@ export interface ICompetition {
   duration: string;
   link: string;
 }
-
-export const codeforcesLink =
-  "https://crackncode.contest.codeforces.com/group/rn8uJP8lA7/contests";
 
 export const sortKey = [
   "Upcoming (2023)",
@@ -156,14 +155,13 @@ export const competitions: Record<string, ICompetition[]> = {
       link: "https://pretoi19.crackncode.org/",
     },
     ...generateMonths(6, 6),
-  ],
-  "Upcoming (2023)": [
     {
       round: "July",
       special: "Anniversary Round",
       duration: "1 July 2023 19:00 - 22:00",
       link: codeforcesLink,
     },
-    ...generateMonths(8, 12),
+    ...(!isTBA && pastNextContest ? [nextContest] : []),
   ],
+  "Upcoming (2023)": [...(!isTBA && !pastNextContest ? [nextContest] : [])],
 };
