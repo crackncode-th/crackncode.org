@@ -32,7 +32,7 @@
       * Some of CMS Competitions are now available in
       <Link href="https://programming.in.th" blue>programming.inth</Link>
       and
-      <Link href="https://otog.cf" blue>otog.cf</Link>
+      <Link href="https://otog.in.th" blue>otog.in.th</Link>
     </p>
   </FloatIn>
 
