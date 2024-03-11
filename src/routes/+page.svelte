@@ -5,7 +5,7 @@
   import RedButton from "$components/elements/RedButton.svelte";
   import {
     isTBA,
-    nextContestIsSpecial,
+    nextContestSpecial,
     nextContestLink,
     nextContestTime,
     pastNextContest,
@@ -36,9 +36,9 @@
   <CncText delay={400} clsx="mb-2" color="#F13830">
     <h2 class="text-3xl font-bold">
       {pastNextContest ? "Previous" : "Next"} Contest
-      {#if nextContestIsSpecial}
+      {#if nextContestSpecial}
         <br class="sm:hidden" />
-        ✨Special Round✨
+        ✨{nextContestSpecial}✨
       {/if}
     </h2>
   </CncText>
@@ -50,7 +50,7 @@
   <FloatIn delay={600}>
     <div class="mb-6 mt-11 flex flex-col justify-center gap-5 sm:flex-row">
       <RedButton href={nextContestLink} disabled={isTBA}>
-        {nextContestIsSpecial ? "View Details" : "Register"}
+        {nextContestSpecial ? "View Details" : "Register"}
       </RedButton>
 
       <a
