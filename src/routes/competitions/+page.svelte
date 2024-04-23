@@ -30,7 +30,7 @@
     </p>
     <p class="text-left">
       * Some of CMS Competitions are now available in
-      <Link href="https://programming.in.th" blue>programming.inth</Link>
+      <Link href="https://programming.in.th" blue>programming.in.th</Link>
       and
       <Link href="https://otog.in.th" blue>otog.in.th</Link>
     </p>
