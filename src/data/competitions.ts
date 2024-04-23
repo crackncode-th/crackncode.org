@@ -168,5 +168,13 @@ export const competitions: Record<string, ICompetition[]> = {
       link: codeforcesLink,
     },
   ],
-  "Upcoming (2024)": [...(!isTBA && !pastNextContest ? [nextContest] : [])],
+  "Upcoming (2024)": [
+    {
+      round: "March",
+      special: "Pre POSN 2",
+      duration: "23-24 March 2024 19:00 - 22:00",
+      link: codeforcesLink,
+    },
+    ...(!isTBA && !pastNextContest ? [nextContest] : []),
+  ],
 };
