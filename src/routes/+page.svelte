@@ -5,8 +5,8 @@
   import RedButton from "$components/elements/RedButton.svelte";
   import {
     isTBA,
-    nextContestSpecial,
     nextContestLink,
+    nextContestSpecial,
     nextContestTime,
     pastNextContest,
   } from "$data/nextContest";
