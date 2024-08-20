@@ -3,7 +3,7 @@
   import FloatIn from "$components/animated/FloatIn.svelte";
   import Link from "$components/elements/Link.svelte";
   import RoundCard from "$components/elements/RoundCard.svelte";
-  import { competitions, sortKey } from "$data/competitions";
+  import { competitions } from "$data/competitions";
 </script>
 
 <svelte:head>
@@ -24,20 +24,23 @@
       * All time are displayed in Thailand Local Time (UTC+7)
     </p>
     <p class="text-left">
-      * CMS Competitions are not available for practice yet but its statements
-      can be found on our
-      <Link href="https://github.com/crackncode-th" blue>GitHub</Link>
+      * Contests on HackerRank and Codeforces are available at their platform.
     </p>
     <p class="text-left">
-      * Some of CMS Competitions are now available in
+      * Pre TOI18 and Pre TOI19 hosted on CMS is now available at
       <Link href="https://programming.in.th" blue>programming.in.th</Link>
       and
-      <Link href="https://otog.in.th" blue>otog.in.th</Link>
+      <Link href="https://โอถอก.ไทย" blue>โอถอก.ไทย</Link> (Pre TOI18 only)
+    </p>
+    <p class="text-left">
+      * Anniversary Round (July 2022) are not available for practice yet but its
+      statements can be found on our
+      <Link href="https://github.com/crackncode-th" blue>GitHub</Link>
     </p>
   </FloatIn>
 
   <FloatIn delay={400}>
-    {#each Object.entries(competitions).sort((a, b) => sortKey.indexOf(a[0]) - sortKey.indexOf(b[0])) as [year, comps]}
+    {#each Object.entries(competitions).sort((a, b) => +b[0] - +a[0]) as [year, comps]}
       <section class="my-8">
         <div class="my-8 flex items-center gap-4">
           <h2 class="text-3xl font-bold">{year}</h2>

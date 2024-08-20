@@ -25,24 +25,6 @@
       performance.
     </p>
   </FloatIn>
-
-  <FloatIn delay={400}>
-    <h2>About Competition</h2>
-    <p>
-      Most of our competitions are similar to IOI-Format. There will be 3
-      questions with equal score of 100 per each. You will be given 3 hours and
-      any language is allowed. Note that we do not use time scaling policy.
-      <b>Currently, all statements are only available in Thai.</b>
-    </p>
-  </FloatIn>
-
-  <FloatIn delay={600}>
-    <h2>When is our Contest?</h2>
-    <p>
-      Please follow our social media (Facebook, Instagram) for updates about
-      upcoming contests.
-    </p>
-  </FloatIn>
 </main>
 
 <style lang="scss">

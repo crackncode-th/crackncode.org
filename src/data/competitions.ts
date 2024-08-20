@@ -1,5 +1,4 @@
 import { codeforcesLink } from "./constants";
-import { isTBA, nextContest, pastNextContest } from "./nextContest";
 import { firstSaturdayOf, monthNames } from "./utils";
 
 export interface ICompetition {
@@ -8,13 +7,6 @@ export interface ICompetition {
   duration: string;
   link: string;
 }
-
-export const sortKey = [
-  "Upcoming (2023)",
-  "2023",
-  "2022",
-  "2021",
-] satisfies Array<keyof typeof competitions>;
 
 function generateMonths(begin: number, end: number) {
   return Array.from({ length: end - begin + 1 }, (_, i) => ({
@@ -168,13 +160,18 @@ export const competitions: Record<string, ICompetition[]> = {
       link: codeforcesLink,
     },
   ],
-  "Upcoming (2024)": [
+  "2024": [
     {
       round: "May",
       special: "Pre TOI 20",
       duration: "4-5 May 2024 19:00 - 23:00",
       link: codeforcesLink,
     },
-    ...(!isTBA && !pastNextContest ? [nextContest] : []),
+    {
+      round: "July",
+      special: "3rd Anniversary",
+      duration: "6 July 2024 19:00 - 22:00",
+      link: codeforcesLink,
+    },
   ],
 };

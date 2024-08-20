@@ -10,7 +10,7 @@ export const sponsors = [
   {
     image: "/logos/taurus.webp",
     url: "https://learntaurus.com/",
-    name: "TAURUS",
+    name: "Learn Taurus",
     sponsoring: "This website domain, contest costs and coffee for members",
     medal: "🎉🎉🎉",
   },
