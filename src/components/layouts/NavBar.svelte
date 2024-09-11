@@ -7,7 +7,6 @@
     "": "Home",
     about: "About",
     competitions: "All Competitions",
-    sponsors: "Sponsors",
   };
 
   let popup = false;

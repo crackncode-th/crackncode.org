@@ -169,7 +169,7 @@ export const competitions: Record<string, ICompetition[]> = {
     },
     {
       round: "July",
-      special: "3rd Anniversary",
+      special: "3rd Anniversary, Final Contest",
       duration: "6 July 2024 19:00 - 22:00",
       link: codeforcesLink,
     },
