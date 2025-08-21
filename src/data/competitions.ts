@@ -144,7 +144,7 @@ export const competitions: Record<string, ICompetition[]> = {
       round: "May",
       special: "Pre TOI19",
       duration: "13 & 14 May 2022 19:00 - 22:00",
-      link: "https://pretoi19.crackncode.org/",
+      link: "https://crackncode-pretoi19.pages.dev/",
     },
     ...generateMonths(6, 6),
     {
